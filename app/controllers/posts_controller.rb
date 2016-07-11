@@ -4,6 +4,8 @@ class PostsController < ApplicationController
 	end
 
 	def show
+		index = request.params[:blog_number].to_i
+		@post = Post.all[index]
 
 
 	end
