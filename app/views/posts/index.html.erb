@@ -2,6 +2,9 @@
 
 <p>These are the blogs:</p>
 
-<li>
-<ul><a href="/blog">Blog your problems</a></ul>
-</li>
+<ul>
+<li><a href="/blog">Blog your problems</a></li>
+<% @posts.each do |post| %>
+<li><%= post %></li>
+<% end %>
+</ul>
