@@ -20,4 +20,10 @@ class PostsController < ApplicationController
 		redirect_to "/blog/#{Post.all.find_index(newpost)}"
 		# redirect_to "/"
 	end 
+	
+	def update
+		render json: request.params
+
+	end
+
 end

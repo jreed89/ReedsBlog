@@ -10,6 +10,12 @@
 <% @post.comments.each do |comment| %>
 <li><%= comment %></li>
 <% end %>
+<li>
+	<%= form_tag "#", method: :patch do %>
+	<input type="text" name="Comment" placeholder="Post Comment" />
+	<button type="submit">Post</button>
+	<% end %>
+</li>
 </ol>
 
 
