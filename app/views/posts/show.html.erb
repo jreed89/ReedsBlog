@@ -6,5 +6,10 @@
 
 <p>At your own Risk:</p>
 
+<ol>
+<% @post.comments.each do |comment| %>
+<li><%= comment %></li>
+<% end %>
+</ol>
 
 
