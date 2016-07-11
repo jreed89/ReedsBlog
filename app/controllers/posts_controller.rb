@@ -14,6 +14,7 @@ class PostsController < ApplicationController
 	end
 
 	def create
-		render json: request.params 
+		Post.all.push(request.params[:title])
+		redirect_to "/"
 	end 
 end
