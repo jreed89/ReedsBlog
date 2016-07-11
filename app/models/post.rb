@@ -8,11 +8,8 @@ class Post
 
 	def initialize(title)
 		@title = title
-		@comments = [
-			"Comment a",
-			"Comment b",
-			"Comment c"
-		]
+		@comments = []
+	
 		@@all.push(self)
 	end
 

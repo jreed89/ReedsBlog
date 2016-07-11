@@ -1,24 +1,27 @@
-* {
+/** {
   margin: 0;
   padding: 0;
   border: 0;
   font-size: inherit;
   font-weight: inherit;
-  font-family: inherit;
+  font-family: 'Kaushan';
   font-style: inherit;
   text-decoration: inherit;
   line-height: inherit;
   color: inherit;
+}*/
+@font-face {
+    font-family: 'Kaushan';
+    src: url('assets/fonts/KaushanScript-Regular.otf');
 }
-
 html{
   /*font-family: "Helvetica Neue", Helvetica, sans-serif;*/
   font-size: 18px;
   line-height: 30px;
-  color: #444;
-  text-shadow: 1px 1px 0px #fff;
+  color: black;
+  /*text-shadow: 1px 1px 0px #fff;*/
   /*background-color:#acf;*/
-  background: teal;
+  background: #632322;
 }
 html, body{
   width:100%;
@@ -26,7 +29,8 @@ html, body{
   position:relative;
 }
 body{
-  background-color:#f9f9f9;
+  /*background-color:#f9f9f9;*/
+  background-image: url(https://pmcdeadline2.files.wordpress.com/2014/06/apple-logo.jpg);
   min-height:100%;
   width:80%;
   min-width:600px;
@@ -35,6 +39,7 @@ body{
   box-sizing:border-box;
 }
 h1{
+  font-family: 'Kaushan';
   text-align:center;
   font-size:48px;
   line-height:64px;
@@ -45,7 +50,7 @@ h2{
 }
 a{
 /*  color:#06f;*/
-  color:teal;
+  color:black;
 }
 li{
   list-style-position:inside;

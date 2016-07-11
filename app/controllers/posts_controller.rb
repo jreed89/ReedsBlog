@@ -22,7 +22,11 @@ class PostsController < ApplicationController
 	end 
 	
 	def update
-		render json: request.params
+		index = request.params[:blog_number].to_i
+		post = Post.all[index]
+		post.comments.push(request.params[:comment])
+		redirect_to "/blog/#{index}"
+		# render json: request.params
 
 	end
 
